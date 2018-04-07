@@ -11,10 +11,30 @@ class Dashboard extends Component {
 
         this.state = {
             widgets: {
-                HelloWorld: {
+                Widget1: {
                     type: HelloWorld,
-                    title: 'Test widget',
-                }
+                    title: 'Widget #1',
+                    frameSettings: {
+                        cardClass: 'border-primary',
+                        headerClass: 'bg-primary text-light',
+                    }
+                },
+                Widget2: {
+                    type: HelloWorld,
+                    title: 'Widget #2',
+                    frameSettings: {
+                        cardClass: 'border-light',
+                        headerClass: 'bg-light text-dark',
+                    }
+                },
+                Widget3: {
+                    type: HelloWorld,
+                    title: 'Widget #3',
+                    frameSettings: {
+                        cardClass: 'border-danger',
+                        headerClass: 'bg-danger text-light',
+                    }
+                },
             },
             layout: {
                 rows: [
@@ -22,15 +42,15 @@ class Dashboard extends Component {
                         columns: [
                             {
                                 className: 'col-md',
-                                widgets: [{key: 'HelloWorld'}],
+                                widgets: [{key: 'Widget1'}],
                             },
                             {
                                 className: 'col-md',
-                                widgets: [{key: 'HelloWorld'}],
+                                widgets: [{key: 'Widget2'}],
                             },
                             {
                                 className: 'col-md',
-                                widgets: [{key: 'HelloWorld'}],
+                                widgets: [{key: 'Widget3'}],
                             },
                         ],
                     },
