@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import DazzleDashboard from 'react-dazzle';
 import HelloWorld from './widgets/HelloWorld';
 import Container from './Container';
-import CardFrame from './frames/CardFrame';
+import SmashingFrame from './frames/SmashingFrame';
+import faCoffee from '@fortawesome/fontawesome-free-solid/faCoffee';
+import faClock from '@fortawesome/fontawesome-free-solid/faClock';
+import faAnchor from '@fortawesome/fontawesome-free-solid/faAnchor';
 
 class Dashboard extends Component {
 
@@ -15,24 +18,24 @@ class Dashboard extends Component {
                     type: HelloWorld,
                     title: 'Widget #1',
                     frameSettings: {
-                        cardClass: 'border-primary',
-                        headerClass: 'bg-primary text-light',
+                        icon: faCoffee,
+                        colour: 'red',
                     }
                 },
                 Widget2: {
                     type: HelloWorld,
                     title: 'Widget #2',
                     frameSettings: {
-                        cardClass: 'border-light',
-                        headerClass: 'bg-light text-dark',
+                        icon: faClock,
+                        colour: 'orange',
                     }
                 },
                 Widget3: {
                     type: HelloWorld,
                     title: 'Widget #3',
                     frameSettings: {
-                        cardClass: 'border-danger',
-                        headerClass: 'bg-danger text-light',
+                        icon: faAnchor,
+                        colour: 'yellow',
                     }
                 },
             },
@@ -63,7 +66,7 @@ class Dashboard extends Component {
         return (
             <Container>
                 <DazzleDashboard
-                    frameComponent={CardFrame}
+                    frameComponent={SmashingFrame}
                     widgets={this.state.widgets}
                     layout={this.state.layout}
                 />

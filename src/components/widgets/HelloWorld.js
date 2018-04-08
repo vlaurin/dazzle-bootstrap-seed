@@ -2,7 +2,8 @@ import React from 'react';
 
 const HelloWorld = () => (
     <div className="card-body">
-        <p>Hello world!</p>
+        <h1>Title</h1>
+        <h2>Subtitle</h2>
     </div>
 );
 

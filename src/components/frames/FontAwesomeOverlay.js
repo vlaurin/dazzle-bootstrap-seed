@@ -3,8 +3,8 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 const style = {
     fontSize: '10vw',
-    color: 'lightGray',
-    opacity: '.3',
+    color: 'white',
+    opacity: '.4',
     position: 'absolute',
     top: '50%',
     left: '50%',
