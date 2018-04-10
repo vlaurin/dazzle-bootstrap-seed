@@ -16,22 +16,28 @@ const themeTomorrowNight = {
     'purple': '#b294bb',
 };
 
-const baseStyle = {
-    minHeight: '200px',
+const style = {
+    card: {
+        minHeight: '200px',
+        fontWeight: '600',
+    },
+    children: {
+        zIndex: '10'
+    }
 };
 
 const backgroundColour = (theme, colour) => theme[colour] || colour || defaultBackgroundColour;
 const foregroundColour = (theme, colour) => theme[colour] || colour || defaultForegroundColour;
 
 const SmashingFrame = ({children, settings}) => {
-    let style = Object.assign({}, baseStyle, {
+    let cardStyle = Object.assign({}, style.card, {
         backgroundColor: backgroundColour(themeTomorrowNight, settings.colour),
         color: foregroundColour(themeTomorrowNight, settings.foreground),
     });
 
     return (
-        <div className={`card text-center rounded-0`} style={style}>
-            {children}
+        <div className={`card rounded-0`} style={cardStyle}>
+            <div style={style.children}>{children}</div>
             {settings.icon ? <FontAwesomeOverlay icon={settings.icon} /> : null}
         </div>
     );

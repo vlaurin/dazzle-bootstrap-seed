@@ -6,3 +6,18 @@ body {
     padding-top: 15px;
     bottom: 15px;
 }
+
+/*
+    Show card background instead of list
+ */
+.list-group-item {
+    background-color: transparent;
+}
+
+/*
+    Slightly dim muted text
+ */
+.text-light .text-muted {
+    color: #eeeeee !important;
+    font-weight: normal;
+}
