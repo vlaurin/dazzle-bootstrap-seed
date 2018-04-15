@@ -1,9 +1,9 @@
 import React from 'react';
 
-const HelloWorld = () => (
-    <div className="card-body">
-        <h1>Title</h1>
-        <h2>Subtitle</h2>
+const HelloWorld = ({title, subtitle}) => (
+    <div className="card-body text-center">
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
     </div>
 );
 

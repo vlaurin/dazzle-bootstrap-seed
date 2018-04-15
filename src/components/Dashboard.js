@@ -16,7 +16,10 @@ class Dashboard extends Component {
             widgets: {
                 Widget1: {
                     type: HelloWorld,
-                    title: 'Widget #1',
+                    props: {
+                        title: 'Widget #1',
+                        subtitle: 'Hello World',
+                    },
                     frameSettings: {
                         icon: faCoffee,
                         colour: 'red',
@@ -24,7 +27,10 @@ class Dashboard extends Component {
                 },
                 Widget2: {
                     type: HelloWorld,
-                    title: 'Widget #2',
+                    props: {
+                        title: 'Widget #2',
+                        subtitle: 'This is some rather long content to make widgets of different heights.',
+                    },
                     frameSettings: {
                         icon: faClock,
                         colour: 'orange',
@@ -32,7 +38,10 @@ class Dashboard extends Component {
                 },
                 Widget3: {
                     type: HelloWorld,
-                    title: 'Widget #3',
+                    props: {
+                        title: 'Widget #3',
+                        subtitle: 'Hello World',
+                    },
                     frameSettings: {
                         icon: faAnchor,
                         colour: 'yellow',
@@ -45,7 +54,7 @@ class Dashboard extends Component {
                         columns: [
                             {
                                 className: 'col-md',
-                                widgets: [{key: 'Widget1'}],
+                                widgets: [{key: 'Widget1'}, {key: 'Widget3'}],
                             },
                             {
                                 className: 'col-md',
