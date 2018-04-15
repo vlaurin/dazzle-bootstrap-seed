@@ -18,6 +18,7 @@ const themeTomorrowNight = {
 
 const style = {
     card: {
+        marginBottom: '30px',
         minHeight: '200px',
         fontWeight: '600',
     },
@@ -36,7 +37,7 @@ const SmashingFrame = ({children, settings}) => {
     });
 
     return (
-        <div className={`card rounded-0`} style={cardStyle}>
+        <div className='card justify-content-center rounded-0' style={cardStyle}>
             <div style={style.children}>{children}</div>
             {settings.icon ? <FontAwesomeOverlay icon={settings.icon} /> : null}
         </div>
