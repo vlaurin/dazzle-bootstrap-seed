@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import DazzleDashboard from 'react-dazzle';
-import HelloWorld from './widgets/HelloWorld';
-import Container from './Container';
-import SmashingFrame from './frames/SmashingFrame';
 import faCoffee from '@fortawesome/fontawesome-free-solid/faCoffee';
 import faClock from '@fortawesome/fontawesome-free-solid/faClock';
 import faAnchor from '@fortawesome/fontawesome-free-solid/faAnchor';
+import HelloWorld from './widgets/HelloWorld';
+import Container from './Container';
+import SmashingFrame from './frames/SmashingFrame';
 
 class Dashboard extends Component {
 
